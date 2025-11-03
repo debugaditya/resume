@@ -41,7 +41,7 @@ async function connectToMongo() {
 }
 
 const modelConfig = {
-    model: 'gemini-1.5-flash',
+    model: 'gemini-2.5-flash',
 };
 
 const safetySettings = [
@@ -265,3 +265,4 @@ process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection at:', promise, 'reason:', reason);
     cleanup();
 });
+
